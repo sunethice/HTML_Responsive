@@ -20,6 +20,41 @@ ul{
     padding: 0;
 }
 
+.common-ButtonGroup .common-Button {
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    margin: 10px;
+}
+
+.common-Button{
+    white-space: nowrap;
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 14px;
+    -webkit-box-shadow: 0 4px 6px rgba(50,50,93,.11),0 1px 3px rgba(0,0,0,.08);
+    box-shadow: 0 4px 6px
+    rgba(50,50,93,.11),0 1px 3px
+    rgba(0,0,0,.08);
+    background:
+    #fff;
+    border-radius: 4px;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .025em;
+    color:
+    #6772e5;
+    text-decoration: none;
+    -webkit-transition: all .15s ease;
+    transition: all .15s ease;
+}
+
+.common-Button-dark {
+    color: #fff;
+    background:#32325d;
+}
+
 /* HEADER */
 header{
     background-color:#35424a;
@@ -27,6 +62,10 @@ header{
     padding-top: 30px;
     min-height: 70px;
     border-bottom: #e8491d 3px solid;
+    /* position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 1; */
 }
 
 header a{
@@ -84,7 +123,7 @@ header a:hover{
     bottom:0;
     left:0;
     width: 100%;
-    height: 200px;
+    height: 25%;
     background: #f4f4f4;
     clip-path: polygon(100% 0, 0 100%, 100% 100%)
 }
@@ -103,4 +142,199 @@ header a:hover{
 
 #showcase p{
     font-size: 20px;
+}
+
+.showcase-sub-container{
+    float: left;
+    overflow: hidden;
+}
+.img-container{
+    width:24%;
+    padding: 40px 25px 40px 0;
+}
+
+.content-container{
+    width:66%;
+}
+
+.img-between {
+    width: 15vw;
+    border-radius: 50%;
+}
+
+.social-media{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    margin-top: 10px;
+}
+.social-media img{
+    width: 30px;
+    height: 30px;
+    filter: invert(.5) sepia(1) saturate(5) hue-rotate(175deg);
+}
+
+.social-media img:hover {
+    filter: invert(.5) sepia(1);
+  }
+/* .img-between {
+    position: absolute;
+    bottom: 0;
+    right: calc(50% - 110px);
+    z-index: 1;
+} */
+
+/* About Me*/
+#intro{
+    margin-top: 20px;
+}
+
+#intro .container{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.about-me {
+    width: 60%;
+    padding: 0 20px 0 0;
+}
+
+.my-experience {
+    width: 40%;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::before {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: white;
+    top: 0;
+    bottom: 0;
+    left: 6%;
+    margin-left: -3px;
+}
+  
+  /* Container around content */
+.timeline-container {
+    padding: 10px 80px;
+    position: relative;
+    background-color: inherit;
+    width: 80%;
+}
+
+/* The circles on the timeline */
+.timeline-container::after {
+    content: '';
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: calc(6% - 21px);
+    background-color: white;
+    border: 4px solid #e8491d;
+    top: 30px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.timeline-container .content {
+    padding: 5px 20px;
+    background-color: white;
+    position: relative;
+    border-radius: 6px;
+}
+.timeline-container .content h1{
+    margin: 5px 0;
+}
+
+.timeline-container .content p{
+    margin: 5px 0;
+}
+  
+
+/* boxes */
+#boxes{
+    margin-top: 20px;
+}
+
+#boxes .container{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+#boxes .box{
+    float: left;
+    text-align: center;
+    width: 30%;
+    padding: 10px;
+}
+
+#boxes .box p{
+    text-align: justify;
+}
+
+#boxes .box img{
+    width: 90px;
+    fill: #ff0057;
+    /* to add a shadow depending on the image, not box shadow*/
+    /* filter: drop-shadow(0px 5px 3px black); */
+}
+.filter-orange{
+    filter: invert(39%) sepia(89%) saturate(3725%) hue-rotate(352deg) brightness(95%) contrast(92%);
+    /* convert a color to filer properties - https://codepen.io/sosuke/pen/Pjoqqp */
+}
+
+footer{
+    padding: 20px;
+    margin-top:20px;
+    color:#fff;
+    background-color: #e8491d;
+    text-align: center;
+}
+
+/* extra something to learn - gradient text(do each css rule in the following to check the effect*/
+/* footer p{
+    font-size: 30px;
+    background: linear-gradient(to right, #fff, rgb(163, 163, 160));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+} */
+
+.section-heading {
+    font-size: 40px;
+    padding: 0 0 25px 0;
+    color:#32325d;
+    display: flex;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 600px) {
+    #boxes .container{
+        flex-direction: column;
+    }
+
+    #boxes .box{
+        width: 100%;
+    }
+
+    #intro .container{
+        flex-direction: column;
+    }
+
+    .about-me {
+        width: 100%;
+    }
+    
+    .my-experience {
+        width: 100%;
+    }
 }
