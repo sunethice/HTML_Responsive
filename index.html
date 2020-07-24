@@ -2,15 +2,172 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="Affordable and Professional web design">
         <meta name="keywords" content="web design, responsive Website">
         <meta name="author" content="Suneth Perera">
         <title>Suneth Perera | Welcome</title>
-        <link rel="stylesheet" href="./css/style.css">
+
+           
+        <link rel="stylesheet" href="./css/style_bootstrap.css">
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     </head>
     <body>
-        <header>
+        <nav class="navbar navbar-expand-lg py-2 nav-context">
+            <div class="container">
+                <a id="branding" class="navbar-brand text-white" href="#"><span class="highlight">Suneth</span> Perera</a>
+                <div class="navbar-collapse collapse w-100 order-1 order-lg-0 menu-content">
+                    <div class="navbar-nav text-white ml-auto">
+                        <a href="#" class="nav-item nav-link px-3 text-white active">Home</a>
+                        <a href="#" class="nav-item nav-link px-3 text-white">About</a>
+                        <a href="#" class="nav-item nav-link px-3 text-white">Blog</a>
+                        <a href="#" class="nav-item nav-link px-3 text-white">Contact</a>
+                    </div>
+                </div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".menu-content">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </nav>
+        <section id="showcase">
+            <div class="container-fluid showcase-container">
+                <div class="showcase-sub-container img-container">
+                    <img class="img-between" src="./img/Profile_Pic.jpg">
+                    <div class="social-media">
+                        <img src="./img/twitter.svg">
+                        <a href="https://www.linkedin.com/in/suneth-perera-ba441631/"><img src="./img/linkedin.svg"></a>
+                        <img src="./img/pintrest.svg">
+                        <a href="https://github.com/sunethice"><img src="./img/github.svg"></a>
+                    </div>
+                </div>
+                <div class="showcase-sub-container content-container">
+                    <h1>Hey, I'm Suneth.</h1>
+                    <p>
+                        Developer and web designer from Melbourne, Australia. I am enthusiastic about technology. 
+                    </p>
+                    <p>
+                        <a class="btn btn-dark common-Button common-Button-dark" href="#Work">See My Work</a> 
+                        <a class="btn btn-light common-Button" href="GetInTouch.html">Get in Touch</a> 
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section id="intro" class="section-margin-top">
+            <div class="container container-fluid">
+                <article class="about-me">
+                    <div class="section-heading"> About Me </div>
+                    <p>
+                        I am a developer, web designer and computer programmer offering over 6 years of experience on both client and server sides.  
+                        I have completed a Master's Degree in Information Technology and I have developed my skills with the industrial experience gained. 
+                        Some of the advanced skills that I have invested in  are PHP, MySQL, Javascript, HTML, Jquery, and CSS to name a few.
+                </p>
+                </article>
+                <aside class="my-experience">
+                    <h3>My Experience</h3>
+                    <div class="timeline">
+                        <div class="timeline-container">
+                            <div class="content">
+                                <h4>March 2019 – June 2019</h4>
+                                <p>Software Developer Intern – MyXplor Pty Ltd.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-container">
+                            <div class="content">
+                                <h4>Aug 2013 – July 2017</h4>
+                                <p>Software Developer – Ade Lanka (Soundmouse) Pte Ltd.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-container">
+                            <div class="content">
+                                <h4>Jan 2013 – Aug 2013</h4>
+                                <p>Software Developer – Star Garments Pte Ltd.</p>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </section>
+        <section id="Work" class="section-margin-top">
+            <div class="section-heading"> My Work </div>
+            <div class="container">
+                <div class="card-deck mywork-card-deck">
+                    <div class="card mywork-card">
+                        <img class="card-img-top mywork-card-image" src="img/project1.png" alt="Card image cap">
+                        <div class="card-body">
+                            <p class="card-text">
+                                <span class="mywork-card-date">4 days ago</span>
+                                <h2>Project 03</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                            </p>                        </div>
+                        <div class="card-footer bg-transparent">
+                            <a class="btn btn-dark btn-sm common-Button common-Button-dark" href="SeeMyWork.html">See My Work</a> 
+                            <a class="btn btn-info btn-sm common-Button" href="GetInTouch.html">Get in Touch</a> 
+                        </div>
+                    </div>
+                    <div class="card mywork-card">
+                        <img class="card-img-top mywork-card-image" src="img/project1.png" alt="Card image cap">
+                        <div class="card-body">
+                            <p class="card-text">
+                                <span class="mywork-card-date">4 days ago</span>
+                                <h2>Project 03</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                            </p>                        </div>
+                        <div class="card-footer bg-transparent">
+                            <a class="btn btn-dark btn-sm common-Button common-Button-dark" href="SeeMyWork.html">See My Work</a> 
+                            <a class="btn btn-info btn-sm common-Button" href="GetInTouch.html">Get in Touch</a>
+                        </div>
+                    </div>
+                    <div class="card mywork-card">
+                        <img class="card-img-top mywork-card-image" src="img/project1.png" alt="Card image cap">
+                        <div class="card-body">
+                            <p class="card-text">
+                                <span class="mywork-card-date">4 days ago</span>
+                                <h2>Project 03</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                            </p>
+                        </div>
+                        <div class="card-footer bg-transparent">
+                            <a class="btn btn-dark btn-sm common-Button common-Button-dark" href="SeeMyWork.html">See My Work</a> 
+                            <a class="btn btn-info btn-sm common-Button" href="GetInTouch.html">Get in Touch</a>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="section-margin-top">
+            <div class="section-heading"> Contact </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 contact-col">
+                        <div class="contact-me-img-wrap">
+                            <img src="img/contact_me.png" alt="contact me">
+                        </div>
+                    </div>
+                    <div class="col-sm-6 contact-col">
+                        <div class="Contact-details">
+                            <div class="contact-item">
+                                <div>Mobile</div>
+                                <div>0426 41 4747</div>
+                            </div>
+                            <div class="contact-item">
+                                <div>E-mail</div>
+                                <div>suneth_perera@outlook.com</div>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <p>
+                Suneth Perera. Copyright &copy; 2019.
+            </p>
+        </footer>
+        <!-- <header>
             <div class="container">
                 <div id="branding">
                     <h1><span class="highlight">Suneth</span>  Perera</h1>
@@ -107,10 +264,60 @@
                 </div>
             </div>
         </section>
+        <section id="Work">
+            <div class="section-heading"> My Work </div>
+            <div class="container">
+                <div class="card">
+                    <div class="card-image">
+                    </div>
+                    <div class="card-text">
+                        <span class="date">4 days ago</span>
+                        <h2>Project 03</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                    </div>                    
+                    <div class="card-buttons">
+                        <div class="stat">
+                            <a class="common-Button common-Button-dark" href="SeeMyWork.html">See My Work</a> 
+                            <a class="common-Button" href="GetInTouch.html">Get in Touch</a> 
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-image">
+                    </div>
+                    <div class="card-text">
+                        <span class="date">4 days ago</span>
+                        <h2>Project 03</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                    </div>                    
+                    <div class="card-buttons">
+                        <div class="stat">
+                            <a class="common-Button common-Button-dark" href="SeeMyWork.html">See My Work</a> 
+                            <a class="common-Button" href="GetInTouch.html">Get in Touch</a> 
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-image">
+                    </div>
+                    <div class="card-text">
+                        <span class="date">4 days ago</span>
+                        <h2>Project 03</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                    </div>
+                    <div class="card-buttons">
+                        <div class="stat">
+                            <a class="common-Button common-Button-dark" href="SeeMyWork.html">See My Work</a> 
+                            <a class="common-Button" href="GetInTouch.html">Get in Touch</a> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <footer>
             <p>
                 Suneth Perera. Copyright &copy; 2019.
             </p>
-        </footer>
+        </footer> -->
     </body>
 </html>
