@@ -357,14 +357,14 @@ footer p{
     box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
     text-align: center;
 }
-
+/* 
 .mywork-card-deck > :first-child { 
     margin-left: 0 !important; 
 }
 
 .mywork-card-deck > :last-child { 
     margin-right: 0 !important; 
-}
+} */
 
 .mywork-card-image {
     border-top-left-radius: 15px !important;
@@ -400,7 +400,7 @@ footer p{
     right: 0;
     width: 0;
     height: 0;
-    border-top: 509px solid transparent;
+    border-top: 414px solid transparent;
     border-left: 800px solid #8614ce;
     pointer-events: none;
 }
@@ -474,7 +474,7 @@ footer p{
     }
 
     #showcase{
-        height: 90vh;
+        height: 42vh;
     }
 
     #showcase > div > div > h1, p{
@@ -511,11 +511,20 @@ footer p{
     .mywork-card{
         margin-bottom: 30px !important;
     }
+    
     .mywork-card-deck > :first-child { 
         margin-left: 50px !important; 
     }
 
     .nav-context #branding{
         font-size: 16px !important;
+    }
+
+    .contact-me-wrap{
+        border-left: 418px solid #8614ce;
+    }
+
+    #contact-img-wrap{
+        display: none;
     }
 }
