@@ -11,21 +11,23 @@
            
         <link rel="stylesheet" href="./css/style_bootstrap.css">
 
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<!--        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <!-- <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet"> -->
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Source+Serif+Pro:ital@1&family=Zilla+Slab:ital@1&display=swap" rel="stylesheet"> 
     </head>
     <body>
-        <nav class="navbar navbar-expand-lg py-2 nav-context">
+        <nav id="main-nav" class="navbar navbar-expand-lg py-2 nav-context">
             <div class="container">
                 <a id="branding" class="navbar-brand text-white" href="#"><span class="highlight">Suneth</span> Perera</a>
                 <div class="navbar-collapse collapse w-100 order-1 order-lg-0 menu-content">
                     <div class="navbar-nav text-white ml-auto">
                         <a href="#" class="nav-item nav-link px-3 text-white active">Home</a>
-                        <a href="#" class="nav-item nav-link px-3 text-white">About</a>
-                        <a href="#" class="nav-item nav-link px-3 text-white">Blog</a>
-                        <a href="#" class="nav-item nav-link px-3 text-white">Contact</a>
+                        <a href="#intro" class="nav-item nav-link px-3 text-white">About</a>
+                        <a href="#services" class="nav-item nav-link px-3 text-white">Services</a>
+                        <a href="#contact" class="nav-item nav-link px-3 text-white">Contact</a>
                     </div>
                 </div>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".menu-content">
@@ -98,79 +100,85 @@
         <section id="Work" class="section-margin-top">
             <div class="section-heading"> My Work </div>
             <div class="container">
-                <div class="card-deck mywork-card-deck">
-                    <div class="card mywork-card">
-                        <img class="card-img-top mywork-card-image" src="img/project1.png" alt="Card image cap">
+                <div class="row">
+                  <div class="col-sm-4 mx-0 px-4 pb-5 text-center">
+                    <div class="card">
+                        <img class="card-img-top mywork-card-image" src="img/project1.png" alt="Card image cap"/>
                         <div class="card-body">
-                            <p class="card-text">
-                                <span class="mywork-card-date badge badge-pill badge-dark">4 days ago</span>
+                            <div class="card-text">
+                                <!-- <span class="mywork-card-date badge badge-pill badge-dark">4 days ago</span> -->
                                 <h2>Project 03</h2>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-                            </p>                        
+                            </div>                       
                         </div>
                         <div class="card-footer bg-transparent">
-                            <div class="btn btn-group">
+                            <div class="btn btn-group d-flex m-auto">
                                 <button class="btn btn-dark common-Button-dark" href="SeeMyWork.html">Preview</button> 
-                                <button class="btn btn-info" href="GetInTouch.html">Source code</button> 
+                                <button class="btn common-Button-purple" href="GetInTouch.html">Source code</button> 
                             </div>
                         </div>
                     </div>
-                    <div class="card mywork-card">
-                        <img class="card-img-top mywork-card-image" src="img/project1.png" alt="Card image cap">
+                </div>
+                <div class="col-sm-4 mx-0 px-4 pb-5 text-center">
+                    <div class="card">
+                        <img class="card-img-top mywork-card-image" src="img/project1.png" alt="Card image cap"/>
                         <div class="card-body">
-                            <p class="card-text">
-                                <span class="mywork-card-date badge badge-pill badge-dark">4 days ago</span>
+                            <div class="card-text">
+                                <!-- <span class="mywork-card-date badge badge-pill badge-dark">4 days ago</span> -->
                                 <h2>Project 03</h2>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-                            </p>                        
+                            </div>                        
                         </div>
                         <div class="card-footer bg-transparent">
-                            <div class="btn btn-group">
+                            <div class="btn btn-group d-flex m-auto">
                                 <button class="btn btn-dark common-Button-dark" href="SeeMyWork.html">Preview</button> 
-                                <button class="btn btn-info" href="GetInTouch.html">Source code</button> 
+                                <button class="btn common-Button-purple" href="GetInTouch.html">Source code</button> 
                             </div>
                         </div>
                     </div>
-                    <div class="card mywork-card">
-                        <img class="card-img-top mywork-card-image" src="img/project1.png" alt="Card image cap">
+                </div>
+                <div class="col-sm-4 mx-0 px-4 pb-5 text-center">
+                    <div class="card">
+                        <img class="card-img-top mywork-card-image" src="img/project2.png" alt="Card image cap"/>
                         <div class="card-body">
-                            <p class="card-text">
-                                <span class="mywork-card-date badge badge-pill badge-dark">4 days ago</span>
-                                <h2>Project 03</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-                            </p>
+                            <div class="card-text">
+                                <!-- <span class="mywork-card-date badge badge-pill badge-dark">4 days ago</span> -->
+                                <h2>Emerald Tours</h2>
+                                <p>Designed with HTML, CSS, Bootstrap, Laravel and MySQL. It is a responsive website with dynamic functionality to manage bookings from customers and Admin functions.</p>
+                            </div>
                         </div>
                         <div class="card-footer bg-transparent">
-                            <div class="btn btn-group">
-                                <button class="btn btn-dark common-Button-dark" href="SeeMyWork.html">Preview</button> 
-                                <button class="btn btn-info" href="GetInTouch.html">Source code</button> 
+                            <div class="btn btn-group d-flex m-auto">
+                                <button class="btn btn-dark common-Button-dark" target="'_blank'" onclick="window.open('http:/\/emerald.suneth-perera.com', '_blank'); return false;">Preview</button> 
+                                <button class="btn common-Button-purple" href="GetInTouch.html">Source code</button> 
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            </div>
         </section>
 
-        <section id="boxes" class="section-margin-top">
-            <div class="section-heading">Services</div>
+        <section id="services" class="section-margin-top">
+            <div class="section-heading">My skills</div>
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-md-4 p-3">
-                        <img class="filter-orange d-flex m-auto mb-3" src="./img/web_design.svg">
+                        <img class="my-skills-img d-flex mx-auto mb-3" src="./img/web_design.svg">
                         <h1 class="text-center mb-3">Web Design</h1>
                         <p class="text-justify">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            I value the user experience and do my best to bring the design to life in the browser.
                         </p>
                     </div>
                     <div class="col-12 col-md-4 p-3">
-                        <img class="filter-orange d-flex m-auto mb-3" src="./img/development.svg">
+                        <img class="my-skills-img d-flex mx-auto mb-3" src="./img/dev.svg">
                         <h1 class="text-center mb-3" >Development</h1>
                         <p class="text-justify">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            Personally, I prefer to reasearch new technologies and follow best practices to 
                         </p>
                     </div>
                     <div class="col-12 col-md-4 p-3">
-                        <img class="filter-orange d-flex m-auto mb-3" src="./img/database.svg">
+                        <img class="my-skills-img d-flex mx-auto mb-3" src="./img/database.svg">
                         <h1 class="text-center mb-3" >Database</h1>
                         <p class="text-justify">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
@@ -208,7 +216,7 @@
                             </div>
                             <div class="form-row mb-3">
                                 <div class="col">
-                                    <button type="submit" class="btn btn-info btn-bubble">Send</button>
+                                    <button type="submit" class="btn btn btn-dark common-Button common-Button-dark btn-bubble">Send</button>
                                 </div>
                             </div>
                         </form>
@@ -224,131 +232,20 @@
                 Suneth Perera. Copyright &copy; 2019.
             </p>
         </footer>
-        <!-- <header>
-            <div class="container">
-                <div id="branding">
-                    <h1><span class="highlight">Suneth</span>  Perera</h1>
-                </div>
-                <nav>
-                    <ul>
-                        <li class="current"><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="services.html">My Work</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
-        <section id="showcase">
-            <div class="container showcase-container">
-                <div class="showcase-sub-container img-container">
-                    <img class="img-between" src="./img/Profile_Pic.jpg">
-                    <div class="social-media">
-                        <img src="./img/twitter.svg">
-                        <img src="./img/linkedin.svg">
-                        <img src="./img/pintrest.svg">
-                        <img src="./img/github.svg">
-                    </div>
-                </div>
-                <div class="showcase-sub-container content-container">
-                    <h1>Hey, I'm Suneth.</h1>
-                    <p>
-                        Developer and web designer from Melbourne, Australia. I am enthusiastic about technology. 
-                    </p>
-                    <p>
-                        <a class="common-Button common-Button-dark" href="SeeMyWork.html">See My Work</a> 
-                        <a class="common-Button" href="GetInTouch.html">Get in Touch</a> 
-                    </p>
-                </div>
-            </div>
-        </section>
-        <section id="intro">
-            <div class="container">
-                <article class="about-me">
-                    <div class="section-heading"> About Me </div>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    </p>
-                </article>
-                <aside class="my-experience">
-                    <h1>My Experience</h1>
-                    <div class="timeline">
-                        <div class="timeline-container">
-                            <div class="content">
-                                <h1>March 2019 – June 2019</h1>
-                                <p>Software Developer Intern – MyXplor Pty Ltd.</p>
-                            </div>
-                        </div>
-                        <div class="timeline-container">
-                            <div class="content">
-                                <h1>Aug 2013 – July 2017</h1>
-                                <p>Software Developer – Ade Lanka (Soundmouse) Pte Ltd.</p>
-                            </div>
-                        </div>
-                        <div class="timeline-container">
-                            <div class="content">
-                                <h1>Jan 2013 – Aug 2013</h1>
-                                <p>Software Developer – Star Garments Pte Ltd.</p>
-                            </div>
-                        </div>
-                    </div>
-                </aside>
-            </div>
-        </section>
-        <section id="Work">
-            <div class="section-heading"> My Work </div>
-            <div class="container">
-                <div class="card">
-                    <div class="card-image">
-                    </div>
-                    <div class="card-text">
-                        <span class="date">4 days ago</span>
-                        <h2>Project 03</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-                    </div>                    
-                    <div class="card-buttons">
-                        <div class="stat">
-                            <a class="common-Button common-Button-dark" href="SeeMyWork.html">See My Work</a> 
-                            <a class="common-Button" href="GetInTouch.html">Get in Touch</a> 
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-image">
-                    </div>
-                    <div class="card-text">
-                        <span class="date">4 days ago</span>
-                        <h2>Project 03</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-                    </div>                    
-                    <div class="card-buttons">
-                        <div class="stat">
-                            <a class="common-Button common-Button-dark" href="SeeMyWork.html">See My Work</a> 
-                            <a class="common-Button" href="GetInTouch.html">Get in Touch</a> 
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-image">
-                    </div>
-                    <div class="card-text">
-                        <span class="date">4 days ago</span>
-                        <h2>Project 03</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-                    </div>
-                    <div class="card-buttons">
-                        <div class="stat">
-                            <a class="common-Button common-Button-dark" href="SeeMyWork.html">See My Work</a> 
-                            <a class="common-Button" href="GetInTouch.html">Get in Touch</a> 
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <footer>
-            <p>
-                Suneth Perera. Copyright &copy; 2019.
-            </p>
-        </footer> -->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+        <script>
+            $(document).ready(function() {
+	           $('#main-nav a').click(function(e) {
+                var targetHref = $(this).attr('href');
+//                   alert(targetHref)
+	  
+                $('html, body').animate({
+                    scrollTop: $(targetHref).offset().top
+                }, 1000);
+
+                e.preventDefault();
+               });
+            });
+        </script>
     </body>
 </html>

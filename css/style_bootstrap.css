@@ -2,7 +2,7 @@ body{
     /* font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
     line-height: 1.5; */
-    font-family: 'Open Sans';
+    font-family: 'Zilla Slab', 'Open Sans', cursive !important;
     /* font: 15px/1.5 Arial, Helvetica, sans-serif; this line is equal to above 3 lines */
     padding: 0;
     margin: 0;
@@ -58,7 +58,7 @@ ul{
     background:#fff;
     text-transform: uppercase;
     letter-spacing: .025em;
-    color:#6772e5;
+    color:#7510f7;
     text-decoration: none;
     -webkit-transition: all .15s ease;
     transition: all .15s ease;
@@ -67,16 +67,22 @@ ul{
 
 .common-Button-dark {
     color: #fff;
-    background:#32325d;
+    background:#141c3a;
+}
+
+.common-Button-purple{
+    color:#fff !important;
+    background-color:#7510f7 !important;
+    border-color: #7510f7 !important;
 }
 
 /* HEADER */
 .nav-context{
-    background-color:#35424a;
+    background-color:#141c3a;
     color: #fff;
     padding-top: 30px;
     min-height: 70px;
-    border-bottom: #e8491d 3px solid;
+    border-bottom: #7510f7 3px solid;
 }
 
 .nav-context a{
@@ -98,11 +104,11 @@ ul{
 }
 
 .nav-context .highlight, .nav-context .current a{
-    color:#e8491d !important;
+    color:#7510f7 !important;
     font-weight: bold !important;
 }
 
-.nav-context a:hover{
+.nav-context .navbar-nav a:hover{
     color:#ccc;
     font-weight:bold;
 }
@@ -126,8 +132,8 @@ ul{
     background: url('../img/showcase_img1.jpg') no-repeat 0 -428px; */
     position: relative;
     width: 100%;
-    height: 40vw;
-    background: linear-gradient(45deg, #8614ce, #ff0057);
+    height: 35vw;
+    background: linear-gradient(45deg, #141c3a, #7510f7);
     display: flex;
     text-align: left;
     color: #fff;
@@ -139,7 +145,7 @@ ul{
     bottom:0;
     left:0;
     width: 100%;
-    height: 15vw;
+    height: 10vw;
     background: #f4f4f4;
     clip-path: polygon(100% 0, 0 100%, 100% 100%)
 }
@@ -257,7 +263,7 @@ ul{
     height: 24px;
     left: calc(3% - 21px);
     background-color: white;
-    border: 4px solid #e8491d;
+    border: 4px solid #7510f7;
     top: 30px;
     border-radius: 50%;
     z-index: 1;
@@ -300,19 +306,15 @@ ul{
 
 #boxes .box img{
     width: 90px;
-    fill: #ff0057;
+    fill: #7510f7;
     /* to add a shadow depending on the image, not box shadow*/
     /* filter: drop-shadow(0px 5px 3px black); */
-}
-.filter-orange{
-    filter: invert(39%) sepia(89%) saturate(3725%) hue-rotate(352deg) brightness(95%) contrast(92%);
-    /* convert a color to filer properties - https://codepen.io/sosuke/pen/Pjoqqp */
 }
 
 footer{
     padding: 20px;
     /* margin-top:20px; */
-    color:#e8491d;
+    color:#fff;
     background-color: #35424a;
     text-align: center;
 }
@@ -332,7 +334,7 @@ footer p{
 .section-heading {
     font-size: 40px;
     padding: 0 0 25px 0;
-    color:#32325d;
+    color:#141c3a;
     display: flex;
     justify-content: center;
 }
@@ -392,6 +394,10 @@ footer p{
     position: relative;
 }
 
+.my-skills-img{
+    width: 75px;
+}
+
 .contact-me-wrap{
     position: absolute;
     left: 0;
@@ -401,7 +407,7 @@ footer p{
     width: 0;
     height: 0;
     border-top: 414px solid transparent;
-    border-left: 800px solid #8614ce;
+    border-left: 800px solid #7510f7;
     pointer-events: none;
 }
 
@@ -469,12 +475,8 @@ footer p{
         justify-content: unset;
     }
 
-    #showcase::before {
-        height: 17vw;
-    }
-
     #showcase{
-        height: 42vh;
+        height: 87vh;
     }
 
     #showcase > div > div > h1, p{
@@ -521,7 +523,7 @@ footer p{
     }
 
     .contact-me-wrap{
-        border-left: 418px solid #8614ce;
+        border-left: 418px solid #7510f7;
     }
 
     #contact-img-wrap{
