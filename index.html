@@ -11,7 +11,7 @@
            
         <link rel="stylesheet" href="./css/style_bootstrap.css">
 
-<!--        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>-->
+       <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -21,9 +21,9 @@
     </head>
     <body>
         <nav id="main-nav" class="navbar navbar-expand-lg py-2 nav-context">
-            <div class="container">
+            <div class="container sticky-top ">
                 <a id="branding" class="navbar-brand text-white" href="#"><span class="highlight">Suneth</span> Perera</a>
-                <div class="navbar-collapse collapse w-100 order-1 order-lg-0 menu-content">
+                <div id="menu-content" class="navbar-collapse collapse w-100 order-1 order-lg-0 menu-content">
                     <div class="navbar-nav text-white ml-auto">
                         <a href="#" class="nav-item nav-link px-3 text-white active">Home</a>
                         <a href="#intro" class="nav-item nav-link px-3 text-white">About</a>
@@ -31,7 +31,7 @@
                         <a href="#contact" class="nav-item nav-link px-3 text-white">Contact</a>
                     </div>
                 </div>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".menu-content">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu-content">
                     <span class="navbar-toggler-icon"></span>
                 </button>
             </div>
@@ -54,7 +54,7 @@
                     </p>
                     <p>
                         <a class="btn btn-dark common-Button common-Button-dark" href="#Work">See My Work</a> 
-                        <a class="btn btn-light common-Button" href="GetInTouch.html">Get in Touch</a> 
+                        <a class="btn btn-light common-Button" href="#contact">Get in Touch</a> 
                     </p>
                 </div>
             </div>
@@ -107,7 +107,7 @@
                 <div class="row">
                   <div class="col-sm-4 mx-0 px-4 pb-5 text-center">
                     <div class="card">
-                        <img class="card-img-top mywork-card-image" src="img/project1.png" alt="Card image cap"/>
+                        <img class="card-img-top mywork-card-image" src="img/project2.png" alt="Card image cap"/>
                         <div class="card-body">
                             <div class="card-text">
                                 <!-- <span class="mywork-card-date badge badge-pill badge-dark">4 days ago</span> -->
@@ -130,7 +130,7 @@
                 </div>
                 <div class="col-sm-4 mx-0 px-4 pb-5 text-center">
                     <div class="card">
-                        <img class="card-img-top mywork-card-image" src="img/project1.png" alt="Card image cap"/>
+                        <img class="card-img-top mywork-card-image" src="img/project2.png" alt="Card image cap"/>
                         <div class="card-body">
                             <div class="card-text">
                                 <!-- <span class="mywork-card-date badge badge-pill badge-dark">4 days ago</span> -->
@@ -179,23 +179,27 @@
                     <div class="col-12 col-md-4 p-3">
                         <img class="my-skills-img d-flex mx-auto mb-3" src="./img/web_design.svg">
                         <h1 class="text-center mb-3">Web Design</h1>
-                        <p class="text-justify">
+                        <p class="px-3 text-justify">
                             I value the user experience and do my best to bring the design to life in the browser.
                         </p>
                     </div>
                     <div class="col-12 col-md-4 p-3">
                         <img class="my-skills-img d-flex mx-auto mb-3" src="./img/dev.svg">
                         <h1 class="text-center mb-3" >Development</h1>
-                        <p class="text-justify">
-                            Personally, I prefer to reasearch new technologies and follow best practices to 
-                        </p>
+                        <div>
+                            <p class="px-3 text-justify">
+                                Personally, I prefer to reasearch new technologies and follow best practices to enhance the maintainaility.
+                            </p>
+                            <h5 class="pt-3 text-center">Languages I speak</h5>
+                        </div>
                     </div>
                     <div class="col-12 col-md-4 p-3">
                         <img class="my-skills-img d-flex mx-auto mb-3" src="./img/database.svg">
                         <h1 class="text-center mb-3" >Database</h1>
-                        <p class="text-justify">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        <p class="px-3 text-justify">
+                            I possess knowledge in maintaining relational databases like mySQL and No-SQL databases like MongoDB, Firebase.
                         </p>
+                        <h5 class="pt-3 text-center">Languages I speak</h5>
                     </div>
                 </div>
             </div>
@@ -260,7 +264,7 @@
                 Suneth Perera. Copyright &copy; 2019.
             </p>
         </footer>
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+        <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script> -->
         <script>
             $(document).ready(function() {
 	           $('#main-nav a').click(function(e) {
