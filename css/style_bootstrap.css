@@ -359,6 +359,14 @@ footer p{
     box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
     text-align: center;
 }
+
+#Work p{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 5; /* number of lines to show */
+    -webkit-box-orient: vertical;
+}
 /* 
 .mywork-card-deck > :first-child { 
     margin-left: 0 !important; 
