@@ -2,7 +2,7 @@ body{
     /* font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
     line-height: 1.5; */
-    font-family: 'Zilla Slab', 'Open Sans', cursive !important;
+    font-family: 'Zilla Slab', serif !important;
     /* font: 15px/1.5 Arial, Helvetica, sans-serif; this line is equal to above 3 lines */
     padding: 0;
     margin: 0;
@@ -377,6 +377,8 @@ footer p{
 } */
 
 .mywork-card-image {
+    max-width: 326px;
+    max-height: 217px;
     border-top-left-radius: 15px !important;
     border-top-right-radius: 15px !important;
     background-size: cover;
