@@ -2,7 +2,7 @@ body{
     /* font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
     line-height: 1.5; */
-    font-family: 'Zilla Slab', serif !important;
+    font-family: 'Zilla Slab','Roboto Slab', serif !important;
     /* font: 15px/1.5 Arial, Helvetica, sans-serif; this line is equal to above 3 lines */
     padding: 0;
     margin: 0;
@@ -174,14 +174,10 @@ ul{
     float: left;
     overflow: hidden;
 }
-.img-container{
-    width:24%;
-    padding: 40px 16px 40px 0;
-}
 
 .content-container{
     width:66%;
-    padding: 40px 16px 40px 0;
+    /* padding: 40px 16px 40px 0; */
 }
 
 .img-between {
@@ -416,7 +412,7 @@ footer p{
     right: 0;
     width: 0;
     height: 0;
-    border-top: 414px solid transparent;
+    border-top: 415px solid transparent;
     border-left: 800px solid #7510f7;
     pointer-events: none;
 }
@@ -468,13 +464,6 @@ footer p{
     #intro .container{
         flex-direction: column;
     }
-
-    .img-container{
-        width: auto;
-        display: block;
-        text-align: center; 
-        padding: 40px 16px 25px 0;
-    }
     
     .img-between{
         width: 40vw;
@@ -495,7 +484,7 @@ footer p{
 
     .content-container {
         width: auto;
-        padding: 0px 16px 40px 0;
+        /* padding: 0px 16px 40px 0; */
     }
 
     .social-media{
@@ -533,7 +522,8 @@ footer p{
     }
 
     .contact-me-wrap{
-        border-left: 418px solid #7510f7;
+        border-top: 419px solid transparent;
+        border-left: 360px solid #7510f7;
     }
 
     #contact-img-wrap{
